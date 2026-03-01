@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO básico -->
+  <title>Elisama Macoppi | Studio de Beleza em Indaial - SC</title>
+  <meta name="description" content="Studio de Beleza em Indaial - SC. Manicure, Pedicure, Unhas de Gel, Blindagem, Designer de Sobrancelhas e Extensão de Cílios. Agende pelo WhatsApp." />
+  <meta name="keywords" content="manicure Indaial, pedicure Indaial, unhas de gel Indaial, blindagem de unhas Indaial, extensão de cílios Indaial, designer de sobrancelhas Indaial, studio de beleza Indaial SC" />
+  <meta name="author" content="Elisama Macoppi" />
+  <meta name="theme-color" content="#FF1493" />
+
+  <!-- Open Graph (preview WhatsApp/Instagram) -->
+  <meta property="og:title" content="Elisama Macoppi | Studio de Beleza em Indaial - SC" />
+  <meta property="og:description" content="Beleza e carinho em cada detalhe. Agende seu horário pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <!-- Opcional: troque pelo caminho real da imagem quando hospedar -->
+  <meta property="og:image" content="images/elisama.jpg" />
+
+  <!-- Favicon (opcional, coloque o arquivo na raiz do projeto) -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            serif: ["Lora", "serif"],
+          },
+          colors: {
+            primary: "#F0F0F0",
+            secondary: "#6B6B6B",
+            dark: "#1A1A1A",
+            light: "#FFFFFF",
+            accent: "#FF1493",
+            "soft-pink": "#FF8FAB",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500;700&display=swap");
+    html { scroll-behavior: smooth; }
+    a, button { transition: all 0.3s ease-in-out; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #FF1493; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #C4006F; }
+  </style>
+</head>
+
+<body class="bg-primary font-sans text-dark leading-relaxed">
+
+  <!-- Cabeçalho -->
+  <header class="bg-light shadow-lg sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#topo" class="text-3xl font-bold font-serif text-dark">Elisama Macoppi</a>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#sobre" class="text-secondary hover:text-accent font-medium">Sobre</a>
+        <a href="#servicos" class="text-secondary hover:text-accent font-medium">Serviços</a>
+        <a href="#diferenciais" class="text-secondary hover:text-accent font-medium">Diferenciais</a>
+        <a href="#depoimentos" class="text-secondary hover:text-accent font-medium">Depoimentos</a>
+        <a href="#contato" class="text-secondary hover:text-accent font-medium">Contato</a>
+
+        <!-- Botão no desktop (melhoria de conversão) -->
+        <a href="#contato" class="bg-accent text-white py-2 px-6 rounded-full font-medium hover:bg-dark shadow-md">
+          Agendar
+        </a>
+      </div>
+
+      <!-- Botão no mobile -->
+      <a href="#contato" class="md:hidden bg-accent text-white py-2 px-6 rounded-full font-medium hover:bg-dark shadow-md">
+        Agendar
+      </a>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="bg-light py-20 md:py-32 text-center relative overflow-hidden">
+      <div class="container mx-auto px-6 z-10 relative">
+        <p class="text-secondary text-base md:text-lg mb-3">
+          Studio de Beleza em <span class="font-semibold text-dark">Indaial - SC</span>
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-serif font-bold text-dark leading-tight mb-4">
+          Beleza e Carinho em Cada Detalhe
+        </h1>
+
+        <p class="text-lg md:text-2xl text-secondary mb-10 max-w-3xl mx-auto">
+          Transforme sua beleza e realce sua essência com a expertise e dedicação que você merece.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-accent text-white text-xl font-medium py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105 inline-block"
+          >
+            Agende pelo WhatsApp
+          </a>
+
+          <a
+            href="#servicos"
+            class="bg-dark text-white text-xl font-medium py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105 inline-block"
+          >
+            Ver Serviços
+          </a>
+        </div>
+
+        <p class="text-secondary mt-8 text-sm">
+          Atendimento com hora marcada • Higienização e cuidado • Produtos de qualidade
+        </p>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-16 md:py-24 bg-primary">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/2 flex justify-center">
+          <!-- IMPORTANTE:
+               Troque "images/elisama.jpg" pelo caminho real da sua imagem.
+               Coloque a foto dentro de uma pasta "images" junto do HTML. -->
+          <img
+            src="images/elisama.jpg"
+            alt="Foto de Elisama Macoppi"
+            class="w-full max-w-md rounded-2xl shadow-2xl border-4 border-white transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Conheça Elisama Macoppi</h2>
+
+          <p class="text-lg mb-4 text-secondary">
+            Com mais de <span class="font-semibold text-dark">7 anos de experiência</span>, sou Elisama, uma profissional dedicada à beleza e ao bem-estar.
+            Minha paixão é realçar a beleza natural de cada cliente, oferecendo um serviço que une técnica, carinho e produtos de alta qualidade.
+          </p>
+
+          <p class="text-lg text-secondary mb-6">
+            Especialista em manicure, pedicure, designer de sobrancelhas e também em aplicação de cílios.
+            Meu objetivo é que cada visita ao meu studio seja uma experiência relaxante e transformadora.
+          </p>
+
+          <!-- Micro CTA -->
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20servi%C3%A7os"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center bg-accent text-white py-3 px-8 rounded-full font-medium hover:bg-dark shadow-md"
+          >
+            Tirar dúvida no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="bg-soft-pink py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-center mb-4">Serviços</h2>
+        <p class="text-center text-secondary max-w-3xl mx-auto mb-12">
+          Escolha o serviço ideal para você e clique para agendar rapidamente no WhatsApp.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20Manicure%20e%20Pedicure"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-light p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <div class="text-accent text-5xl mb-4">💅</div>
+            <h3 class="text-2xl font-serif font-bold mb-2 text-dark">Manicure e Pedicure</h3>
+            <p class="text-secondary">Cutilagem e esmaltação impecável, com foco na saúde e durabilidade.</p>
+          </a>
+
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20Aplicacao%20de%20Cilios"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-light p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <div class="text-accent text-5xl mb-4">👁️</div>
+            <h3 class="text-2xl font-serif font-bold mb-2 text-dark">Aplicação de Cílios</h3>
+            <p class="text-secondary">Realce seu olhar com técnicas de extensão, do natural ao volumoso.</p>
+          </a>
+
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20Blindagem%20de%20Unhas"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-light p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <div class="text-accent text-5xl mb-4">🛡️</div>
+            <h3 class="text-2xl font-serif font-bold mb-2 text-dark">Blindagem de Unhas</h3>
+            <p class="text-secondary">Fortalecimento e proteção das unhas naturais, prolongando o brilho do esmalte.</p>
+          </a>
+
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20Unhas%20de%20Gel"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-light p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <div class="text-accent text-5xl mb-4">💎</div>
+            <h3 class="text-2xl font-serif font-bold mb-2 text-dark">Unhas de Gel</h3>
+            <p class="text-secondary">Alongamento e manutenção com acabamento perfeito e alta durabilidade.</p>
+          </a>
+
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20Designer%20de%20Sobrancelhas"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-light p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <div class="text-accent text-5xl mb-4">✍️</div>
+            <h3 class="text-2xl font-serif font-bold mb-2 text-dark">Designer de Sobrancelhas</h3>
+            <p class="text-secondary">Modelagem personalizada para valorizar o formato do seu rosto.</p>
+          </a>
+
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20Esmaltacao%20Duradoura"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-light p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <div class="text-accent text-5xl mb-4">🎨</div>
+            <h3 class="text-2xl font-serif font-bold mb-2 text-dark">Esmaltação Duradoura</h3>
+            <p class="text-secondary">Cores vibrantes e brilho intenso por mais tempo com materiais de qualidade.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-16 md:py-24 bg-primary">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-center mb-4">Por que escolher o Studio?</h2>
+        <p class="text-center text-secondary max-w-3xl mx-auto mb-12">
+          Atendimento pensado para você: conforto, técnica e cuidado em cada etapa.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-light p-6 rounded-2xl shadow-lg text-center">
+            <div class="text-4xl mb-3">🕒</div>
+            <h3 class="font-semibold text-dark mb-2">Hora marcada</h3>
+            <p class="text-secondary">Sem filas. Seu tempo é respeitado do início ao fim.</p>
+          </div>
+          <div class="bg-light p-6 rounded-2xl shadow-lg text-center">
+            <div class="text-4xl mb-3">🧼</div>
+            <h3 class="font-semibold text-dark mb-2">Higiene e cuidado</h3>
+            <p class="text-secondary">Procedimentos com atenção e padrão de limpeza.</p>
+          </div>
+          <div class="bg-light p-6 rounded-2xl shadow-lg text-center">
+            <div class="text-4xl mb-3">⭐</div>
+            <h3 class="font-semibold text-dark mb-2">Experiência</h3>
+            <p class="text-secondary">Mais de 7 anos realçando a beleza com técnica.</p>
+          </div>
+          <div class="bg-light p-6 rounded-2xl shadow-lg text-center">
+            <div class="text-4xl mb-3">💖</div>
+            <h3 class="font-semibold text-dark mb-2">Atendimento acolhedor</h3>
+            <p class="text-secondary">Você se sente em casa e sai renovada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-16 md:py-24 bg-soft-pink">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-center mb-12">Depoimentos</h2>
+
+        <div class="max-w-4xl mx-auto space-y-8">
+          <div class="bg-light p-8 rounded-2xl shadow-lg">
+            <p class="text-lg text-secondary italic mb-4">
+              "O trabalho da Elisama é impecável! Minhas unhas ficam perfeitas por semanas. O ambiente é super acolhedor e ela é muito atenciosa."
+            </p>
+            <p class="font-semibold text-dark">- Maria, cliente fiel</p>
+          </div>
+
+          <div class="bg-light p-8 rounded-2xl shadow-lg">
+            <p class="text-lg text-secondary italic mb-4">
+              "Fiz a aplicação de cílios e adorei o resultado! Super natural e durou muito. A Elisama é uma verdadeira artista."
+            </p>
+            <p class="font-semibold text-dark">- Ana, nova cliente</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20deixar%20um%20depoimento%20sobre%20o%20studio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center bg-dark text-white py-3 px-8 rounded-full font-medium hover:bg-accent shadow-md"
+          >
+            Enviar meu depoimento
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-light py-16 md:py-24 text-center">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Pronto para Agendar?</h2>
+
+        <p class="text-lg md:text-xl text-secondary mb-6 max-w-2xl mx-auto">
+          Agende seu horário pelo WhatsApp ou acompanhe os trabalhos no Instagram.
+        </p>
+
+        <!-- Horário e localização (melhora conversão e SEO local) -->
+        <div class="max-w-2xl mx-auto mb-10 bg-primary rounded-2xl p-6 shadow-md">
+          <p class="text-dark font-semibold mb-2">📍 Indaial - SC</p>
+          <p class="text-secondary">
+            ⏰ Segunda a Sexta: 08:00 às 18:00 <br />
+            ⏰ Sábado: 08:00 às 13:00
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+          <a
+            href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-accent text-white py-4 px-10 rounded-full text-lg font-medium hover:bg-dark shadow-lg transition-colors transform hover:scale-105"
+          >
+            WhatsApp
+          </a>
+
+          <a
+            href="https://www.instagram.com/elisamacristina_studiohair"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-accent text-white py-4 px-10 rounded-full text-lg font-medium hover:bg-dark shadow-lg transition-colors transform hover:scale-105"
+          >
+            Instagram
+          </a>
+        </div>
+
+        <p class="text-secondary mt-8 text-sm">
+          Dica: no WhatsApp, envie uma mensagem com o serviço desejado e o melhor horário para você.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botão fixo WhatsApp -->
+  <a
+    href="https://wa.me/554991390083?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 bg-accent w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-dark transition-colors"
+    aria-label="Abrir WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="32" height="32">
+      <path d="M20.52 3.48A11.82 11.82 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.15 1.59 5.97L0 24l6.34-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12a11.82 11.82 0 0 0-3.48-8.52zm-8.44 17.28a10.26 10.26 0 0 1-5.58-1.58l-.4-.25-3.76.96.98-3.66-.26-.39a10.27 10.27 0 1 1 8.98 4.92z"/>
+      <path d="M17.57 14.28c-.24-.12-1.43-.71-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.64.79-.78.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42-.14 0-.3-.02-.46-.02s-.42.06-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.68 2.58 4.08 3.62 2.4 1.04 2.4.7 2.84.66.44-.04 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/>
+    </svg>
+  </a>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white py-8 text-center">
+    <div class="container mx-auto px-6">
+      <p>&copy; 2026 Elisama Macoppi. Todos os direitos reservados.</p>
+      <p class="text-white/70 text-sm mt-2">
+        Studio de Beleza em Indaial - SC • Agendamentos via WhatsApp
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
