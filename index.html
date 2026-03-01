@@ -11,14 +11,28 @@
   <meta name="author" content="Elisama Macoppi" />
   <meta name="theme-color" content="#FF1493" />
 
+  <!-- Canonical (ajuda no SEO e evita duplicidade) -->
+  <link rel="canonical" href="https://julimar.github.io/Elisama-Nails/" />
+
   <!-- Open Graph (preview WhatsApp/Instagram) -->
   <meta property="og:title" content="Elisama Macoppi | Studio de Beleza em Indaial - SC" />
   <meta property="og:description" content="Beleza e carinho em cada detalhe. Agende seu horário pelo WhatsApp." />
   <meta property="og:type" content="website" />
-  <!-- Opcional: troque pelo caminho real da imagem quando hospedar -->
-  <meta property="og:image" content="images/elisama.jpg" />
+  <meta property="og:url" content="https://julimar.github.io/Elisama-Nails/" />
+  <!-- IMPORTANTE: URL ABSOLUTA para WhatsApp/Instagram pegar a imagem -->
+  <meta property="og:image" content="https://julimar.github.io/Elisama-Nails/imageselisama.jpg.jpeg" />
 
-  <!-- Favicon (opcional, coloque o arquivo na raiz do projeto) -->
+  <!-- Twitter (opcional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Elisama Macoppi | Studio de Beleza em Indaial - SC" />
+  <meta name="twitter:description" content="Beleza e carinho em cada detalhe. Agende seu horário pelo WhatsApp." />
+  <meta name="twitter:image" content="https://julimar.github.io/Elisama-Nails/imageselisama.jpg.jpeg" />
+
+  <!-- Performance: fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Favicon (opcional) -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -125,11 +139,9 @@
     <section id="sobre" class="py-16 md:py-24 bg-primary">
       <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         <div class="w-full md:w-1/2 flex justify-center">
-          <!-- IMPORTANTE:
-               Troque "images/elisama.jpg" pelo caminho real da sua imagem.
-               Coloque a foto dentro de uma pasta "images" junto do HTML. -->
+          <!-- IMAGEM AJUSTADA para o nome real do arquivo no seu repositório -->
           <img
-            src="images/elisama.jpg"
+            src="imageselisama.jpg.jpeg"
             alt="Foto de Elisama Macoppi"
             class="w-full max-w-md rounded-2xl shadow-2xl border-4 border-white transition-transform duration-300 hover:scale-105"
             loading="lazy"
@@ -316,7 +328,6 @@
           Agende seu horário pelo WhatsApp ou acompanhe os trabalhos no Instagram.
         </p>
 
-        <!-- Horário e localização (melhora conversão e SEO local) -->
         <div class="max-w-2xl mx-auto mb-10 bg-primary rounded-2xl p-6 shadow-md">
           <p class="text-dark font-semibold mb-2">📍 Indaial - SC</p>
           <p class="text-secondary">
